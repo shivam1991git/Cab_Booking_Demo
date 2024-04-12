@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style2.css">
+   <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    <title>Choose Car</title>
+    <style>  
+     .main-container {
+           height: 40vh;
+           
+        background-image: url(images/carrr.jpg);
+
+        }
+        .main-tariff {
+            padding: 3rem 7%;
+        }
+        
+        .main-tariff h1 {
+            font-size: 38px;
+            text-align: center;
+            padding-bottom: 3rem;
+        }
+        
+        .main-tariff h1 span {
+            color: #ffc61a;
+        }
+        
+        .inner-tarrif {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .tarrif-container {
+            flex: 1 1 350px;
+            text-align: center;
+            padding: 5rem 0;
+        }
+        
+        .tarrif-container img {
+            width: 60%;
+            margin-top: -50px;
+        }
+        
+        .tarrif-container .inner-box h2 {
+            font-size: 30px;
+        }
+        
+        .tarrif-container .inner-box p {
+            font-size: 1.5rem;
+            padding: 2rem;
+        }
+        
+        .tarrif-container .inner-box h3 {
+            color: #6b5000;
+            font-size: 2rem;
+        }
+        
+        .tarrif-container .inner-box a {
+            font-size: 1.5rem;
+            padding: 1rem 3rem;
+        }
+        
+        .tarrif-container:nth-child(2) {
+            background: #481aff;
+        }
+        
+        .tarrif-container:nth-child(5) {
+            background: #481aff;
+        }
+        
+        .heading-yellow {
+            color: black;
+        }
+        
+        .yellw-section {
+            color: black !important;
+        }
+        
+        .tarrif-container a {
+            color: white;
+            padding: 1rem 3rem;
+            background: black;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        
+        @media (max-width:768px) {
+            html {
+                font-size: 50%;
+            }
+            #menu-bars {
+                display: initial;
+            }
+            .navbar {
+                position: absolute;
+                top: -100%;
+                right: 0;
+                left: 0;
+            }
+            .navbar a {
+                display: block;
+                font-size: 1.5rem;
+                background: #ffc61a;
+                margin: 1rem;
+                padding: 1rem;
+            }
+            .header {
+                padding: 2rem;
+            }
+            .tarrif-container {
+                padding-bottom: 4rem;
+            }
+            .tarrif-container img {
+                width: 60%;
+                margin-top: 0px;
+            }
+            .background-text h2 {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainbody">
+        <div class="main-container">
+         <header class="header">
+            <a href="#" id="logo"><img src="images/CabHUB.png" alt=""></a>
+            <nav class="navbar">
+                <a href="index.html">home</a>
+                <a href="services.html">Services</a>
+                <a href="services.html">Book</a>
+                <a href="choosecar.html">Car</a>
+                <a href="about.html">about</a>
+                <a href="contactus.html">Contact</a>
+            </nav>
+            <div class="home-buttons">
+                <a href="login.html" class="home-login buttonFlat">Login</a>
+                <a href="register.html" class="buttonFilled">Register</a>
+            </div>
+            <a href="#" id="menu-bars" class="fas fa-bars"></a>
+        </header> 
+     </div>  
+
+
+    <!-- our tariff -->
+
+    <div class="main-tariff">
+        <h1>Car <span>Price</span></h1>
+        <div class="inner-tarrif">
+            <div class="tarrif-container">
+                <div class="inner-box">
+                    <img src="images/bg.png" alt="">
+                    <h2>Car Model 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat illum officia fugiat, autem facere iste repellendus omnis nemo dolore</p>
+                    <h3>price: $3 /-</h3>
+                    <a href="booknow.html">book now</a>
+                </div>
+            </div>
+
+            <div class="tarrif-container">
+                <div class="inner-box">
+                    <img src="images/bg.png" alt="">
+                    <h2 class="heading-yellow">Car Model 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat illum officia fugiat, autem facere iste repellendus omnis nemo dolore</p>
+                    <h3 class="yellw-section">price: $3 /-</h3>
+                    <a href="booknow.html" class="btn-yellow">book now</a>
+                </div>
+            </div>
+
+            <div class="tarrif-container">
+                <div class="inner-box">
+                    <img src="images/bg.png" alt="">
+                    <h2>Car Model 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat illum officia fugiat, autem facere iste repellendus omnis nemo dolore</p>
+                    <h3>price: $3 /-</h3>
+                    <a href="booknow.html">book now</a>
+                </div>
+            </div>
+            <div class="tarrif-container">
+                <div class="inner-box">
+                    <img src="images/bg.png" alt="">
+                    <h2>Car Model 4</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat illum officia fugiat, autem facere iste repellendus omnis nemo dolore</p>
+                    <h3>price: $3 /-</h3>
+                    <a href="booknow.html">book now</a>
+                </div>
+            </div>
+
+            <div class="tarrif-container">
+                <div class="inner-box">
+                    <img src="images/bg.png" alt="">
+                    <h2 class="heading-yellow">Car Model 5</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat illum officia fugiat, autem facere iste repellendus omnis nemo dolore</p>
+                    <h3 class="yellw-section">price: $3 /-</h3>
+                    <a href="booknow.html" class="btn-yellow">book now</a>
+                </div>
+            </div>
+
+            <div class="tarrif-container">
+                <div class="inner-box">
+                    <img src="images/image1.png" alt="">
+                    <h2>Car Model 6</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat illum officia fugiat, autem facere iste repellendus omnis nemo dolore</p>
+                    <h3>price: $3 /-</h3>
+                    <a href="booknow.html">book now</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer-container">
+        <img src="images/CabHUB.png" alt="Website Logo" class="footer-logo">
+        <div class="footer-content">
+
+            <div class="footer-section quick-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Feedback.html">Feedback</a></li>
+                    <!-- <li><a href="#">Services</a></li> -->
+                    <li><a href="booknow.html">Book</a></li>
+                    <!-- <li><a href="#">Blog</a></li> -->
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-section1">
+
+            <p>Email: info@yourcabbooking.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+
+        <div class="separation-line"></div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Online Cab Booking System. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#" target="_blank"><img src="images/insta.png" alt="Instagram"></a>
+                <a href="#" target="_blank"><img src="images/image.png" alt="Twitter"></a>
+                <a href="#" target="_blank"><img src="images/fb.png" alt="Facebook"></a>
+            </div>
+
+        </div>
+    </footer>
+
+
+    </div>
+<script src="script.js"></script>
+
+    <!-- our tariff ended -->
+
+
+
+</body>
+
+</html>

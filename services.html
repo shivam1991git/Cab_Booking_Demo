@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style2.css">
+   <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+<title>Services</title>
+
+<style>
+    .main-container{
+            background-image: url(images/rr.png);
+        }
+ .main-container {
+           height: 30vh;
+        }
+
+.home-container {
+    background: #ffc61a;
+    padding: 2rem 7%;
+    width: 100%;
+    padding-top: 4rem;
+}
+
+.home-content {
+    position: relative;
+    padding-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-tariff {
+    padding: 4rem 4%;
+}
+
+.main-tariff h1 {
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.main-tariff h1 span {
+    color: #ffc61a;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    gap: 112px;
+}
+
+
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 379px;
+    position: relative;
+    z-index: 10;
+}
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 17px 0;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 38px;
+    font-weight: 600;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+section.first>div :nth-child(2) {
+    font-size: 17px;
+    margin: 5px;
+    padding: 5px;
+
+}
+section.first a {
+    color: white;
+    padding: 1rem 3rem;
+    width:fit-content;
+    background: black;
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: medium;
+    text-align: center;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+    .navbar {
+        position: absolute;
+        top: -100%;
+        right: 0;
+        left: 0;
+    }
+    .navbar a {
+        display: block;
+        font-size: 1.5rem;
+        background: #ffc61a;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .header {
+        padding: 2rem;
+    }
+    .first {
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+
+    section.first>div :nth-child(1) {
+        font-size: 34px;
+        font-weight: bold;
+        margin: -9px;
+        padding: 0px;
+    }
+    section.first>div :nth-child(2) {
+        font-size: 15px;
+        margin: 6px;}
+    
+    .secImg img {
+        width: 60%;
+        margin-top: 0px;
+    }
+    section.first>div{
+        
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+}
+#select-car{
+  color: white;
+    padding: 1rem 3rem;
+    width: fit-content;
+    background: black;
+    display: inline-block;
+    margin-top: 1rem;
+    cursor: pointer;}
+    </style>
+</head>
+
+<body>
+    <div class="mainbody">
+        <div class="main-container">
+         <header class="header">
+            <a href="#" id="logo"><img src="images/CabHUB.png" alt=""></a>
+            <nav class="navbar">
+                <a href="index.html">home</a>
+                <a href="services.html">Services</a>
+                <a href="services.html">Book</a>
+                <a href="choosecar.html">Car</a>
+                <a href="about.html">about</a>
+                <a href="contactus.html">Contact</a>
+            </nav>
+            <div class="home-buttons">
+                <a href="login.html" class="home-login buttonFlat">Login</a>
+                <a href="register.html" class="buttonFilled">Register</a>
+            </div>
+            <a href="#" id="menu-bars" class="fas fa-bars"></a>
+        </header> 
+     </div>  
+
+
+    <!-- our tariff -->
+
+    <div class="main-tariff">
+        <section class="first">
+            <div class="secImg">
+                <img src="images/airport.webp" alt="tour1">
+                
+            </div>
+            <div>
+                <span>Airport Transfers</span>
+                <span>Seamless transfers to and from airports with our reliable service.</span>
+                <select id="select-car" required>
+                  <option value="" disabled selected>Car Type</option>
+                  <option value="Car1">XUV</option>
+                  <option value="Car1">HONDA</option>
+                  <option value="Car1">SCORPIO</option>
+                  <option value="Car1">SWIFT</option>
+                  <option value="Car1">PAJERO</option>
+                  <option value="Car1">MERCEDES</option>
+                  
+              </select>
+              <a href="booknow.html" class="select-car-btn">Booking</a>
+            </div>
+    
+           
+            
+        </section>
+        <div class="separation"></div>
+
+    <section class="first second">
+
+        <div class="secImg">
+            <img src="images/chicago-city-lights-at-night.jpg" alt="">
+
+        </div>
+        <div>
+            <span>City Tours</span>
+            <span>Discover the beauty of your city with our city tour packages.</span>
+            <select id="select-car" required>
+              <option value="" disabled selected>Car Type</option>
+              <option value="Car1">XUV</option>
+              <option value="Car1">HONDA</option>
+              <option value="Car1">SCORPIO</option>
+              <option value="Car1">SWIFT</option>
+              <option value="Car1">PAJERO</option>
+              <option value="Car1">MERCEDES</option>
+          </select>
+            <a href="booknow.html" class="select-car-btn">Booking</a>
+        </div>
+    </section>
+
+    <div class="separation"></div>
+
+    <section class="first">
+        <div class="secImg">
+            <img src="images/rr.png" alt="tour1">
+            
+        </div>
+        <div>
+            <span>Car Rentals</span>
+            <span>Seamless transfers to and from airports with our reliable service.</span>
+            <a href="choosecar.html" class="select-car-btn">Select Car</a>
+        </div>
+
+       
+        
+    </section>
+    <div class="separation"></div>
+    <section class="first second">
+
+        <div class="secImg">
+            <img src="images/india-varanasi-best-places-to-visit-dasaswamedh-ghat.jpg" alt="">
+
+        </div>
+        <div>
+            <span>Holidy Trip</span>
+            <span>Discover the beauty of your city with our city tour packages.</span>
+            <a href="touristpoint.html" class="select-car-btn">Select Place</a>
+        </div>
+    </section>
+
+    <div class="separation"></div>
+    <footer class="footer-container">
+        <img src="images/CabHUB.png" alt="Website Logo" class="footer-logo">
+        <div class="footer-content">
+
+            <div class="footer-section quick-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Feedback.html">Feedback</a></li>
+                   <li><a href="booknow.html">Book</a></li>                  
+                   <li><a href="about.html">About</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-section1">
+
+            <p>Email: info@yourcabbooking.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+
+        <div class="separation-line"></div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Online Cab Booking System. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#" target="_blank"><img src="images/insta.png" alt="Instagram"></a>
+                <a href="#" target="_blank"><img src="images/image.png" alt="Twitter"></a>
+                <a href="#" target="_blank"><img src="images/fb.png" alt="Facebook"></a>
+            </div>
+
+        </div>
+    </footer>
+
+
+    </div>
+<script src="script.js"></script>
+</body>      
+</body>
+
+</html>

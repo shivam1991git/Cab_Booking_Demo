@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cab Booking System</title>
+  <link rel="stylesheet" href="style2.css">
+  <style>
+    .main-container{
+      height: 25vh;
+      background-image: url(images/carrr.jpg);
+    }
+
+    .container {
+      max-width: 600px;
+    margin: 10px auto;
+    background-color: #4d0fa3;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(7, 63, 205, 0.699);
+}
+
+
+    h1 {
+      font-size: 35px;
+      text-align: center;
+      color: #000000;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-size: 15px;
+      font-weight: bold;
+      color: gold;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="time"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box; /* Ensure padding and border are included in width */
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #0056b3;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: gold;
+      color: darkred;
+
+    }
+
+  </style>
+</head>
+<body>
+  <div class="mainbody">
+    <div class="main-container">
+     <header class="header">
+        <a href="#" id="logo"><img src="images/CabHUB.png" alt=""></a>
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="services.html">Services</a>
+            <a href="services.html">Book</a>
+            <a href="choosecar.html">Car</a>
+            <a href="about.html">about</a>
+            <a href="contactus.html">Contact</a>
+        </nav>
+        <div class="home-buttons">
+            <a href="login.html" class="home-login buttonFlat">Login</a>
+            <a href="register.html" class="buttonFilled">Register</a>
+        </div>
+        <a href="#" id="menu-bars" class="fas fa-bars"></a>
+    </header> 
+ </div>  
+  <div class="container">
+    <h1>Book Your Cab</h1>
+    <form id="bookingForm">
+      <div class="form-group">
+        <label for="pickupLocation">Pickup Location:</label>
+        <input type="text" id="pickupLocation" required>
+      </div>
+      <div class="form-group">
+        <label for="destination">Dropoff Location:</label>
+        <input type="text" id="destination" required>
+      </div>
+      <div class="form-group">
+        <label for="pickupDate">Pickup Date:</label>
+        <!-- <input type="date" id="pickupDate" value="" readonly> -->
+        <input type="date" id="pickupDate" value="" required>
+      </div>
+      <div class="form-group">
+        <label for="pickupTime">Pickup Time:</label>
+        <!-- <input type="time" id="pickupTime" value="" readonly> -->
+        <input type="time" id="pickupTime" value="" required>
+      </div>
+      <div class="form-group">
+        <label for="dropoffDate">Dropoff Date:</label>
+        <input type="date" id="dropoffDate" required>
+      </div>
+      <div class="form-group">
+        <label for="dropoffTime">Dropoff Time:</label>
+        <input type="time" id="dropoffTime">
+      </div>
+      <button type="submit" id="bookNowBtn">Book Now</button>
+    </form>
+  </div>
+  <footer class="footer-container">
+    <img src="images/CabHUB.png" alt="Website Logo" class="footer-logo">
+    <div class="footer-content">
+
+        <div class="footer-section quick-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Feedback.html">Feedback</a></li>
+                <!-- <li><a href="#">Services</a></li> -->
+                <li><a href="booknow.html">Book</a></li>
+                <!-- <li><a href="#">Blog</a></li> -->
+                <li><a href="about.html">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-section1">
+
+        <p>Email: info@yourcabbooking.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+    </div>
+
+    <div class="separation-line"></div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Online Cab Booking System. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#" target="_blank"><img src="images/insta.png" alt="Instagram"></a>
+            <a href="#" target="_blank"><img src="images/image.png" alt="Twitter"></a>
+            <a href="#" target="_blank"><img src="images/fb.png" alt="Facebook"></a>
+        </div>
+
+    </div>
+</footer>
+
+
+</div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  // Automatically fill pickup date and time with present date and time
+  // var pickupDateInput = document.getElementById('pickupDate');
+  // var pickupTimeInput = document.getElementById('pickupTime');
+  // var currentDate = new Date();
+  // var currentDateString = currentDate.toISOString().slice(0,10);
+  // var currentTimeString = ('0' + currentDate.getHours()).slice(-2) + ':' + ('0' + currentDate.getMinutes()).slice(-2);
+  // pickupDateInput.value = currentDateString;
+  // pickupTimeInput.value = currentTimeString;
+
+  // Automatically fill pickup location with current location
+//   var pickupLocationInput = document.getElementById('pickupLocation');
+
+// // Check if geolocation is supported by the browser
+// if ("geolocation" in navigator) {
+//   // Get current location
+//   navigator.geolocation.getCurrentPosition(function(position) {
+//     // Get latitude and longitude
+//     var latitude = position.coords.latitude;
+//     var longitude = position.coords.longitude;
+
+//     // Fetch full address using Google Maps Geocoding API
+//     var apiKey = 'YOUR_GOOGLE_MAPS_API_KEY';
+//     var apiUrl = 'https://maps.googleapis.com/maps/api/geocode/json?latlng=' + latitude + ',' + longitude + '&key=' + apiKey;
+
+//     // Fetch address data
+//     fetch(apiUrl)
+//       .then(response => {
+//         if (!response.ok) {
+//           throw new Error('Network response was not ok');
+//         }
+//         return response.json();
+//       })
+//       .then(data => {
+//         if (data.status === 'OK' && data.results && data.results.length > 0) {
+//           pickupLocationInput.value = data.results[0].formatted_address;
+//         } else {
+//           pickupLocationInput.value = "Address not found";
+//         }
+//       })
+//       .catch(error => {
+//         console.error('Error fetching address:', error);
+//         pickupLocationInput.value = "Error fetching address";
+//       });
+//   }, function(error) {
+//     console.error('Error getting current location:', error);
+//     pickupLocationInput.value = "Unable to get current location";
+//   });
+// } else {
+//   console.error('Geolocation is not supported by this browser');
+//   pickupLocationInput.value = "Geolocation is not supported";
+// }
+
+  // Validation and form submission
+  var bookingForm = document.getElementById('bookingForm');
+  bookingForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission behavior
+
+    // You can implement form validation here before submitting the data
+
+    // For demo purposes, let's just display the form data in the console
+    var formData = new FormData(bookingForm);
+    for (var pair of formData.entries()) {
+      console.log(pair[0] + ': ' + pair[1]);
+    }
+
+    // You can implement AJAX request to submit form data to the server here
+  });
+});
+
+  </script>
+</body>
+</html>

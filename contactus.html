@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style2.css">
+   <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    <title>Contact Us</title>
+   
+    <style> 
+    .main-body{
+        height: 100%;
+    } 
+    .main-container {
+           height: 40vh;
+           
+        background-image: url(images/carrr.jpg);
+
+        }
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px;
+        }
+        
+        .contact-info {
+            flex: 1;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #ffc61a;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-info h2 {
+            color: #333;
+            font-size: 29px;
+        }
+        
+        .contact-info p {
+            color: #666;
+        }
+        
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+            font-size: 15px;
+            margin-top: 25px;
+        }
+        
+        .contact-info ul li {
+            margin-bottom: 10px;
+        }
+        
+        .map-container {
+            flex: 1;
+            margin-left: 20px;
+            max-width: 600px;
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            border-radius: 8px;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact-info,
+            .map-container {
+                width: 100%;
+                margin-left: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainbody">
+        <div class="main-container">
+         <header class="header">
+            <a href="#" id="logo"><img src="images/CabHUB.png" alt=""></a>
+            <nav class="navbar">
+                <a href="index.html">home</a>
+                <a href="services.html">Services</a>
+                <a href="services.html">Book</a>
+                <a href="choosecar.html">Car</a>
+                <a href="about.html">about</a>
+                <a href="contactus.html">Contact</a>
+            </nav>
+            <div class="home-buttons">
+                <a href="login.html" class="home-login buttonFlat">Login</a>
+                <a href="register.html" class="buttonFilled">Register</a>
+            </div>
+            <a href="#" id="menu-bars" class="fas fa-bars"></a>
+        </header> 
+     </div> 
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>For any inquiries, please feel free to reach out to us:</p>
+            <ul>
+                <h3>Email: </h3>
+                <li>info@example.com</li>
+                <h3>Phone:</h3>
+                <li>+1234567890</li>
+                <li>+1234567890</li>
+                <h3>Address: </h3>
+                <li> 123 Street, City, Country</li>
+            </ul>
+        </div>
+        <div class="map-container">
+            <!-- Embedded Google Map iframe -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.780738010749!2d92.830537!3d26.702908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTbCsDQwJzA1LjkiTiA5MsKwODknMjIuNSJF!5e0!3m2!1sen!2suk!4v1647487323343!5m2!1sen!2suk"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </div>
+    </div>
+    <footer class="footer-container">
+        <img src="images/CabHUB.png" alt="Website Logo" class="footer-logo">
+        <div class="footer-content">
+
+            <div class="footer-section quick-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Feedback.html">Feedback</a></li>
+                    <!-- <li><a href="#">Services</a></li> -->
+                    <li><a href="booknow.html">Book</a></li>
+                    <!-- <li><a href="#">Blog</a></li> -->
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-section1">
+
+            <p>Email: info@yourcabbooking.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+
+        <div class="separation-line"></div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Online Cab Booking System. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#" target="_blank"><img src="images/insta.png" alt="Instagram"></a>
+                <a href="#" target="_blank"><img src="images/image.png" alt="Twitter"></a>
+                <a href="#" target="_blank"><img src="images/fb.png" alt="Facebook"></a>
+            </div>
+
+        </div>
+    </footer>
+
+
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
